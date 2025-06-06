@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch - Precision Timer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="stopwatch-container">
+        <h1 class="title">Stopwatch</h1>
+        
+        <div class="timer-display">
+          <span id="hours">00</span>:
+          <span id="minutes">00</span>:
+          <span id="seconds">00</span>:
+          <span id="milliseconds">00</span>
+        </div>
+
+        <div class="controls">
+          <button id="startStopBtn" class="btn btn-start">Start</button>
+          <button id="lapBtn" class="btn btn-lap" disabled>Lap</button>
+          <button id="resetBtn" class="btn btn-reset">Reset</button>
+        </div>
+
+        <div class="lap-times">
+          <h3 class="lap-title">Lap Times</h3>
+          <div id="lapList" class="lap-list">
+            <div class="no-laps">No lap times recorded</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+
+  </body>
+</html>
